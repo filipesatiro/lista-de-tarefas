@@ -41,7 +41,7 @@ main {
     flex-flow: row wrap;
     width: 90%;
     margin: auto auto;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding-top: 40px;
 }
 .item {
@@ -53,4 +53,46 @@ main {
     height: 80px;
     width: 100%;
     box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.item-icone {
+    flex: 20%;
+    /* border: 1px  solid orangered; */
+    
+}
+.item-nome {
+    flex: 55%;
+    /* border: 1px  solid deeppink; */
+    font-size: 20px;
+    font-weight: bolder;
+}
+.item-botao {
+    flex: 25%;
+    /* border: 1px  solid green; */
+    
+}
+.delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    height: 80px;
+    width: max-content;
+}
+toque {
+    color: green;
+}
+.item-clicado {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(8, 177, 106);
+    height: 80px;
+    width: 100%;
+}
+.item-clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
 }
